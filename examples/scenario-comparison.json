@@ -1,0 +1,88 @@
+{
+  "base": {
+    "as_of": "2026-10-27",
+    "analysis_through": "2027-03-01",
+    "initial_cash": "2500",
+    "bonds": [
+      {
+        "id": "GK25DDH2-244356.SH",
+        "face_held": "100000",
+        "cashflows": [
+          {
+            "date": "2026-12-11",
+            "kind": "coupon",
+            "amount_per_100": "1.85"
+          },
+          {
+            "date": "2028-12-11",
+            "kind": "principal",
+            "amount_per_100": "100"
+          }
+        ]
+      }
+    ],
+    "sales": [],
+    "requirements": [
+      {
+        "date": "2026-12-15",
+        "amount": "3000"
+      },
+      {
+        "date": "2027-02-26",
+        "amount": "5000"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "hold",
+      "assumption": "No sale; simulated holding and requirements",
+      "sales": []
+    },
+    {
+      "name": "sale-on-time",
+      "assumption": "Hypothetical dirty price 98 and fee 20",
+      "sales": [
+        {
+          "bond_id": "GK25DDH2-244356.SH",
+          "face": "5000",
+          "trade_date": "2027-02-25",
+          "settlement_date": "2027-02-26",
+          "entitlement_cutoff": "2027-02-25",
+          "dirty_price_per_100": "98",
+          "fee": "20"
+        }
+      ]
+    },
+    {
+      "name": "settlement-delayed",
+      "assumption": "Same hypothetical sale, settlement after requirement",
+      "sales": [
+        {
+          "bond_id": "GK25DDH2-244356.SH",
+          "face": "5000",
+          "trade_date": "2027-02-25",
+          "settlement_date": "2027-03-01",
+          "entitlement_cutoff": "2027-02-25",
+          "dirty_price_per_100": "98",
+          "fee": "20"
+        }
+      ]
+    },
+    {
+      "name": "price-stress",
+      "assumption": "Hypothetical dirty price 70 and fee 20, not a quote or forecast",
+      "sales": [
+        {
+          "bond_id": "GK25DDH2-244356.SH",
+          "face": "5000",
+          "trade_date": "2027-02-25",
+          "settlement_date": "2027-02-26",
+          "entitlement_cutoff": "2027-02-25",
+          "dirty_price_per_100": "70",
+          "fee": "20"
+        }
+      ]
+    }
+  ]
+}

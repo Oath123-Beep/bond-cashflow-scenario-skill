@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-01-01",
+  "analysis_through": "2028-01-01",
+  "initial_cash": "20",
+  "bonds": [
+    {
+      "id": "SIMULATED-1",
+      "face_held": "1000",
+      "cashflows": [
+        {"date": "2026-07-01", "kind": "coupon", "amount_per_100": "5"},
+        {"date": "2027-01-01", "kind": "coupon", "amount_per_100": "5"},
+        {"date": "2027-07-01", "kind": "coupon", "amount_per_100": "5"},
+        {"date": "2028-01-01", "kind": "coupon", "amount_per_100": "5"},
+        {"date": "2028-01-01", "kind": "principal", "amount_per_100": "100"}
+      ]
+    }
+  ],
+  "sales": [
+    {"bond_id": "SIMULATED-1", "face": "100", "trade_date": "2026-08-01", "settlement_date": "2026-08-03", "entitlement_cutoff": "2026-08-01", "dirty_price_per_100": "97", "fee": "1"}
+  ],
+  "requirements": [
+    {"date": "2026-07-10", "amount": "80"},
+    {"date": "2027-02-01", "amount": "60"}
+  ]
+}

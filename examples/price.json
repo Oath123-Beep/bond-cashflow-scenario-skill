@@ -1,0 +1,12 @@
+{
+  "valuation_date": "2026-01-01",
+  "face_amount": "1000",
+  "frequency_per_year": 2,
+  "annual_nominal_yield": "0.12",
+  "cashflows": [
+    {"period": 1, "amount_per_100": "5"},
+    {"period": 2, "amount_per_100": "5"},
+    {"period": 3, "amount_per_100": "5"},
+    {"period": 4, "amount_per_100": "105"}
+  ]
+}

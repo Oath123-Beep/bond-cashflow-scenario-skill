@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-10-27",
+  "analysis_through": "2027-03-01",
+  "initial_cash": "2500",
+  "bonds": [
+    {
+      "id": "GK25DDH2-244356.SH",
+      "face_held": "100000",
+      "cashflows": [
+        {"date": "2026-12-11", "kind": "coupon", "amount_per_100": "1.85"},
+        {"date": "2028-12-11", "kind": "principal", "amount_per_100": "100"}
+      ]
+    }
+  ],
+  "sales": [],
+  "requirements": [
+    {"date": "2026-12-15", "amount": "3000"},
+    {"date": "2027-03-01", "amount": "5000"}
+  ]
+}
