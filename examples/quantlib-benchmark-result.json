@@ -1,0 +1,23 @@
+{
+  "quantlib_version": "1.44",
+  "valuation_date": "2026-01-01",
+  "settlement_date": "2026-01-01",
+  "calendar": "NullCalendar; unadjusted; illustrative only",
+  "day_count": "ActualActual(Bond, schedule)",
+  "nominal_yield": 0.12,
+  "compounding": "semiannual",
+  "quantlib_cashflows_by_date": {
+    "2026-07-01": 50.00000000000004,
+    "2027-01-01": 50.00000000000004,
+    "2027-07-01": 50.00000000000004,
+    "2028-01-01": 1050.0
+  },
+  "dirty_price_per_100": 96.53489438730031,
+  "clean_price_per_100": 96.53489438730031,
+  "accrued_per_100": 0.0,
+  "quantlib_value_for_1000_face": 965.3489438730031,
+  "manual_value_for_1000_face": 965.3489438730032,
+  "project_rounded_total": "965.35",
+  "absolute_difference_quantlib_vs_manual": 1.1368683772161603e-13,
+  "limitations": "One synthetic regular-period case. Not observed prices, a trading calendar, or validation of other bonds, contracts or settlement conventions."
+}
